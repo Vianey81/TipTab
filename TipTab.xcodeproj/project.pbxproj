@@ -14,6 +14,8 @@
 		24023A5B1D9DF04300C477F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24023A591D9DF04300C477F9 /* LaunchScreen.storyboard */; };
 		24023A661D9DF04300C477F9 /* TipTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24023A651D9DF04300C477F9 /* TipTabTests.swift */; };
 		24023A711D9DF04300C477F9 /* TipTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24023A701D9DF04300C477F9 /* TipTabUITests.swift */; };
+		24023A811D9DFA6600C477F9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24023A801D9DFA6600C477F9 /* SettingsViewController.swift */; };
+		24023A831D9E1C7E00C477F9 /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24023A821D9E1C7E00C477F9 /* global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		24023A6C1D9DF04300C477F9 /* TipTabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipTabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24023A701D9DF04300C477F9 /* TipTabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTabUITests.swift; sourceTree = "<group>"; };
 		24023A721D9DF04300C477F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24023A801D9DFA6600C477F9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		24023A821D9E1C7E00C477F9 /* global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		24023A441D9DF04300C477F9 = {
 			isa = PBXGroup;
 			children = (
+				24023A821D9E1C7E00C477F9 /* global.swift */,
 				24023A4F1D9DF04300C477F9 /* TipTab */,
 				24023A641D9DF04300C477F9 /* TipTabTests */,
 				24023A6F1D9DF04300C477F9 /* TipTabUITests */,
@@ -99,6 +104,7 @@
 			children = (
 				24023A501D9DF04300C477F9 /* AppDelegate.swift */,
 				24023A521D9DF04300C477F9 /* ViewController.swift */,
+				24023A801D9DFA6600C477F9 /* SettingsViewController.swift */,
 				24023A541D9DF04300C477F9 /* Main.storyboard */,
 				24023A571D9DF04300C477F9 /* Assets.xcassets */,
 				24023A591D9DF04300C477F9 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24023A831D9E1C7E00C477F9 /* global.swift in Sources */,
 				24023A531D9DF04300C477F9 /* ViewController.swift in Sources */,
 				24023A511D9DF04300C477F9 /* AppDelegate.swift in Sources */,
+				24023A811D9DFA6600C477F9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +511,7 @@
 				24023A771D9DF04300C477F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24023A781D9DF04300C477F9 /* Build configuration list for PBXNativeTarget "TipTabTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +520,7 @@
 				24023A7A1D9DF04300C477F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24023A7B1D9DF04300C477F9 /* Build configuration list for PBXNativeTarget "TipTabUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +529,7 @@
 				24023A7D1D9DF04300C477F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
