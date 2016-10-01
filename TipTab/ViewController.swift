@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate  {
 
     @IBOutlet weak var billText: UITextField!
     @IBOutlet weak var tipLabel: UILabel!
@@ -26,12 +26,10 @@ class ViewController: UIViewController {
         self.resultView.layer.cornerRadius = 10
         self.billView.layer.cornerRadius = 10
         self.resultView.layer.borderWidth = 1
+        billText.delegate = self
         self.resultView.layer.borderColor = UIColor(red:0xff/255.0, green:0xee/255.0, blue:0xb0/255.0, alpha: 1.0).cgColor
         self.billView.layer.borderWidth = 1
         self.billView.layer.borderColor = UIColor(red:0xff/255.0, green:0xee/255.0, blue:0xb0/255.0, alpha: 1.0).cgColor
-
-
-
         
     }
 
@@ -63,6 +61,14 @@ class ViewController: UIViewController {
         calculateTip(self)
         let back = defaults.integer(forKey:"background")
         changeBackground(color: back)
+        billText.becomeFirstResponder()
+        self.billView.alpha = 0
+        self.resultView.alpha = 0
+        UIView.animate(withDuration: 0.9, animations: {
+            // This causes first view to fade in and second view to fade out
+            self.billView.alpha = 1
+            self.resultView.alpha = 1
+        })
         
     }
     func changeBackground(color: Int) -> Int {
